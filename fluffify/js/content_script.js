@@ -30,7 +30,7 @@ function walk(node, dict)
             }
             break;
     }
-}
+};
 
 function handleText(textNode, dict) {
     var text = textNode.nodeValue;
@@ -58,5 +58,5 @@ function handleText(textNode, dict) {
             // }
         }
     }
-}
+};
 
