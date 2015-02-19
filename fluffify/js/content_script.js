@@ -1,15 +1,3 @@
-chrome.storage.sync.get('enabled', function(config){
-    if(config.enabled){
-        chrome.storage.sync.get(null, function(data){
-            walk(document.body, data);
-        });
-    } else {
-        console.log("Plugin turned off");
-    }
-
-});
-
-
 function walk(node, dict)
 {
     var excludeElements = ['script', 'style', 'iframe', 'cavas'];
